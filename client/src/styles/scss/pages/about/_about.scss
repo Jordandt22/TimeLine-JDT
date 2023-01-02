@@ -1,0 +1,35 @@
+// About Page Styles
+.about-container {
+  &__appTitle {
+    color: grey;
+    margin-left: $spacer-small;
+    box-shadow: 0 0 5px 1px $black-shadow;
+    padding: $spacer-small * 0.5 $spacer * 1.25;
+    border-radius: $br;
+
+    span {
+      color: $primary-clr;
+    }
+  }
+
+  &__info,
+  &__contact {
+    background: $secondary-bg;
+    padding: $spacer-small;
+    width: 50vw;
+    line-height: $spacer * 1.25;
+    color: grey;
+    margin-top: $spacer-md * 1.25;
+  }
+
+  &__subTitle {
+    margin-top: $spacer-md;
+    margin-bottom: $spacer * 1.25;
+    font-size: $main-fs;
+  }
+
+  &__contact {
+    margin-top: $spacer;
+    border-left: 4px solid $primary-clr;
+  }
+}

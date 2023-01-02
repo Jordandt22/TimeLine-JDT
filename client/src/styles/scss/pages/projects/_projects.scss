@@ -1,0 +1,68 @@
+// Projects Styles
+
+// Header
+.projects-header {
+  margin-bottom: $spacer * 1.5;
+
+  .container__title {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    background: $primary-clr;
+    color: white;
+    padding: $spacer-small $spacer;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      transform: scale(0.9);
+    }
+  }
+}
+
+// Projects
+.projects {
+  .none {
+    color: grey;
+    font-size: $main-fs * 0.75;
+    padding: $spacer-small $spacer;
+    border: 1px solid $secondary-bg;
+    text-align: center;
+  }
+}
+
+.project-item {
+  padding: $spacer-small $spacer;
+  border: 1px solid $secondary-bg;
+  margin-bottom: $spacer;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-1vh);
+  }
+
+  &__name {
+    font-weight: bold;
+  }
+
+  &__status {
+    text-transform: uppercase;
+    font-size: $main-fs * 0.5;
+    font-weight: normal;
+    margin-left: $spacer-small * 0.5;
+  }
+
+   &__tasks {
+    .icon {
+      color: grey;
+      margin-right: 5px;
+    }
+
+    p {
+      color: grey;
+    }
+  }
+}

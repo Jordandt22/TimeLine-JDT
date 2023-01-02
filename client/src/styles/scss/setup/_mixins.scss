@@ -1,0 +1,31 @@
+/* Primary Button */
+@mixin primary_button {
+  outline: none;
+  border: none;
+  background: $primary-clr;
+  border-radius: $br;
+  color: white;
+  font-weight: medium;
+  font-family: $main-font;
+  font-size: $main-fs * 0.7;
+  padding: $spacer-small * 0.75;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    cursor: pointer;
+    background: $dark-primary-clr;
+  }
+}
+
+/* Secondary Button */
+@mixin secondary_button {
+  outline: none;
+  border: none;
+  background: black;
+  color: white;
+  font-family: $main-font;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

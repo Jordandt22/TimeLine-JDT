@@ -1,0 +1,98 @@
+// Settings Page Styles
+.settings-container {
+  .container__title {
+    margin-bottom: $spacer-md;
+  }
+}
+
+.settings-display {
+  background: $secondary-bg;
+  width: 50vw;
+  margin-bottom: $spacer-md;
+  padding: $spacer;
+  border-left: 5px solid $primary-clr;
+
+  &__title {
+    margin-bottom: $spacer * 1.25;
+    font-size: $main-fs;
+  }
+
+  &__info {
+    margin-bottom: $spacer;
+  }
+
+  &__label {
+    background: rgba(white, 0.75);
+    padding: $spacer-small * 0.5;
+    padding-right: $spacer-small * 1.5;
+    margin-bottom: $spacer-small * 0.75;
+    width: fit-content;
+    border-top-right-radius: $br * 0.5;
+    border-bottom-right-radius: $br * 0.5;
+  }
+
+  input {
+    outline: none;
+    border: none;
+    background: transparent;
+    font-size: $main-fs * 0.75;
+    width: 11ch;
+  }
+
+  &__edit {
+    outline: none;
+    border: 1px solid $primary-clr;
+    padding: $spacer-small * 0.5 $spacer-small;
+    color: $primary-clr;
+    background: transparent;
+    border-radius: $br;
+    margin-left: $spacer-small;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background: $primary-clr;
+      color: white;
+    }
+  }
+}
+
+// Update Form
+.update-form {
+  z-index: 1001;
+  background: white;
+  border-radius: $br;
+  padding: $spacer;
+  width: 30vw;
+
+  &__title {
+    font-size: $main-fs;
+    font-weight: normal;
+    margin-bottom: $spacer;
+  }
+
+  &__submit,
+  &__cancel {
+    outline: none;
+    border: none;
+    background: $primary-clr;
+    color: white;
+    padding: $spacer-small * 0.5 $spacer;
+    border-radius: $br;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background: $light-primary-clr;
+    }
+  }
+
+  &__cancel {
+    background: $red;
+    margin-left: $spacer-small * 1.5;
+
+    &:hover {
+      background: rgba($red, 0.5);
+    }
+  }
+}

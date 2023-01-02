@@ -1,0 +1,9 @@
+// Error Styles
+.error-message {
+  background: rgba($red, 0.15);
+  color: $red;
+  padding: $spacer-small * 1.75;
+  line-height: $spacer-small * 1.5;
+  border-radius: $br * 0.5;
+  font-weight: bold;
+}

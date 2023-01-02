@@ -1,0 +1,221 @@
+// Project Styles
+.project-container {
+  .projects-header {
+    margin-bottom: $spacer * 1.25;
+
+    .container__title span {
+      margin-left: $spacer-small;
+      font-size: $main-fs * 0.85;
+      font-weight: normal;
+    }
+
+    a {
+      background: transparent;
+      border: 1px solid $primary-clr;
+      color: $primary-clr;
+      margin-right: $spacer-small;
+
+      &:hover {
+        transform: scale(1);
+        background: $primary-clr;
+        color: white;
+      }
+    }
+
+    &__delete-btn {
+      outline: none;
+      border: none;
+      background: red;
+      color: white;
+      padding: $spacer-small $spacer;
+      font-size: $main-fs * 0.65;
+      transition: all 200ms ease-out;
+
+      &:hover {
+        cursor: pointer;
+        opacity: 0.75;
+      }
+    }
+
+    .project-title-status {
+      font-size: $main-fs * 0.75;
+      margin-top: $spacer-small;
+    }
+  }
+
+  .none {
+    color: grey;
+    background: rgba(lightgrey, 0.35);
+    padding: $spacer-small;
+  }
+
+  &__subTitle,
+  &__desc {
+    color: grey;
+    font-weight: normal;
+    margin-bottom: $spacer-small;
+  }
+
+  &__desc {
+    margin-top: $spacer;
+
+    span {
+      color: black;
+      font-weight: bold;
+    }
+  }
+
+  &__tasks {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: $spacer * 1.5;
+  }
+}
+
+// Project Tasks
+.project-task {
+  padding: $spacer-small * 1.25;
+  margin-bottom: $spacer * 1.5;
+  margin-right: $spacer;
+  box-shadow: 0 0 5px 1px $black-shadow;
+  width: 25%;
+  max-height: 40vh;
+  border-radius: $br * 0.15;
+  transition: all 200ms ease-out;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-2.5vh);
+    box-shadow: 0 6px 5px 1px $black-shadow;
+    border-top: 3px solid $primary-clr;
+  }
+
+  &__info {
+    margin-bottom: $spacer;
+  }
+
+  &__name {
+    margin-bottom: $spacer-small;
+    font-size: $main-fs * 0.65;
+
+    span {
+      color: grey;
+      font-weight: normal;
+      margin-left: $spacer-small * 0.5;
+      font-size: $main-fs * 0.5;
+    }
+  }
+
+  &__desc {
+    color: grey;
+    font-size: $main-fs * 0.5;
+    line-height: $spacer-small * 1.35;
+  }
+
+  &__status {
+    font-size: $main-fs * 0.5;
+  }
+}
+
+// Status
+.status-on-hold {
+  color: $red;
+}
+
+.status-developing {
+  color: $yellow;
+}
+
+.status-finished {
+  color: $green;
+}
+
+// Status Filters
+.status-filters {
+  margin-top: $spacer;
+
+  &__btn {
+    outline: none;
+    background: transparent;
+    border: 1px solid grey;
+    color: grey;
+    padding: $spacer-small * 0.5 $spacer-small;
+    border-radius: $br * 0.5;
+    margin-right: $spacer-small;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      border-color: $primary-clr;
+      color: $primary-clr;
+    }
+  }
+
+  #active {
+    background: $primary-clr;
+    color: white;
+    border-color: $primary-clr;
+  }
+}
+
+// Task Display
+.task-display {
+  min-width: 40vw;
+  background: white;
+  padding: $spacer;
+  border-radius: $br * 0.15;
+  z-index: 1001;
+
+  &__name {
+    font-size: $main-fs;
+    margin-bottom: $spacer-small * 0.45;
+  }
+
+  &__status {
+    font-weight: normal;
+    margin-bottom: $spacer;
+  }
+
+  p {
+    color: grey;
+    margin-bottom: $spacer-small;
+
+    strong {
+      color: black;
+    }
+  }
+
+  &__buttons {
+    margin-top: $spacer-md;
+  }
+
+  a,
+  &__delete {
+    outline: none;
+    border: 1px solid $primary-clr;
+    color: $primary-clr;
+    background: transparent;
+    font-size: $main-fs * 0.5;
+    padding: $spacer-small * 0.5 $spacer-small;
+    text-decoration: none;
+    margin-right: $spacer-small;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background: $primary-clr;
+      color: white;
+    }
+  }
+
+  &__delete {
+    background: $red;
+    color: white;
+    border-color: $red;
+
+    &:hover {
+      background: $red;
+      opacity: 0.75;
+    }
+  }
+}

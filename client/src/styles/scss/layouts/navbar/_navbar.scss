@@ -1,0 +1,81 @@
+// Navbar Styles
+.navbar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: $secondary-bg;
+  padding: $spacer * 1.5;
+  padding-top: $spacer-md;
+  width: 25vw;
+  height: 100vh;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  &__header {
+    margin-bottom: $spacer-md;
+
+    img {
+      $s: 4rem;
+      width: $s;
+      height: $s;
+      margin-right: $spacer-small;
+    }
+
+    h1 {
+      color: grey;
+      font-size: $main-fs * 1.25;
+
+      span {
+        color: $primary-clr;
+      }
+    }
+  }
+
+  .link {
+    margin-bottom: $spacer;
+    text-decoration: none;
+    transition: all 200ms ease-out;
+
+    .icon {
+      color: grey;
+      font-size: $main-fs * 1.35;
+      margin-right: $spacer-small;
+    }
+
+    p {
+      color: grey;
+    }
+
+    &:hover {
+      .icon,
+      p {
+        color: $primary-clr;
+      }
+    }
+  }
+
+  .logout {
+    outline: none;
+    border: none;
+    background: transparent;
+    color: grey;
+    font-weight: bold;
+    transition: all 200ms ease-out;
+
+    .icon {
+      color: grey;
+      font-size: $main-fs * 1.35;
+      margin-right: $spacer-small;
+    }
+
+    &:hover {
+      cursor: pointer;
+      color: $red;
+
+      .icon {
+        color: $red;
+      }
+    }
+  }
+}

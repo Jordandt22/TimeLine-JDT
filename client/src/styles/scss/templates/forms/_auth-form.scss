@@ -1,0 +1,170 @@
+// Auth Form Styles
+.auth-form-container {
+  align-items: start;
+}
+
+.auth-form {
+  flex-direction: column;
+  width: 45vw;
+  padding: $spacer-md * 1.5;
+
+  &__title {
+    font-size: $md-fs * 0.8;
+    margin-bottom: $spacer-small * 0.75;
+  }
+
+  &__subText {
+    font-size: $main-fs * 0.65;
+    color: grey;
+    margin-bottom: $spacer;
+  }
+
+  &__google {
+    outline: none;
+    background: transparent;
+    width: 100%;
+    border: 1px solid $border-clr;
+    border-radius: $br;
+    padding: $spacer-small * 0.75;
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: $main-fs * 0.5;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      background: rgba($border-clr, 0.5);
+    }
+
+    img {
+      $s: 2rem;
+      width: $s;
+      height: $s;
+      margin-right: $spacer-small * 0.5;
+    }
+  }
+
+  &__split {
+    margin: $spacer 0;
+
+    hr {
+      width: 35%;
+      background: $border-clr;
+    }
+
+    p {
+      color: grey;
+      width: fit-content;
+      margin: 0 $spacer-small * 0.25;
+      font-size: $main-fs * 0.5;
+    }
+  }
+
+  &__name-inputs {
+    align-items: start;
+  }
+
+  &__submit {
+    @include primary-button;
+    width: 100%;
+    margin-top: $spacer-small;
+    margin-bottom: $spacer;
+  }
+
+  &__other {
+    font-size: $main-fs * 0.5;
+    font-weight: 500;
+
+    a {
+      text-decoration: none;
+      color: $primary-clr;
+      margin-left: $spacer-small * 0.25;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+// Form Side Content
+.form-side-content {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 55vw;
+  min-height: 100vh;
+  background: $primary-clr;
+  padding: $spacer-md * 1.5;
+
+  h3 {
+    font-size: $main-fs * 1.5;
+    color: rgba(white, 0.35);
+    opacity: 0;
+    animation: slide-in 750ms forwards ease-out 800ms;
+  }
+
+  h1 {
+    font-size: $lg-fs;
+    color: white;
+    text-shadow: -4px 4px 3px $black-shadow;
+    margin: $spacer-small * 1.25 0;
+    margin-left: $spacer-md * 1.75;
+    opacity: 0;
+    animation: slide-in 750ms forwards ease-out 1550ms;
+  }
+
+  h2 {
+    font-size: $md-fs * 1.25;
+    color: rgba(white, 0.65);
+    margin-left: $spacer-lg * 1.75;
+    opacity: 0;
+    animation: slide-in 750ms forwards ease-out 2300ms;
+  }
+
+  &__logo {
+    background: white;
+    margin-top: $spacer-md;
+    border-radius: $br * 3;
+    padding: $spacer;
+    box-shadow: -4px 4px 7.5px 0 $black-shadow;
+    opacity: 0;
+    animation: fade-in 750ms forwards ease-out 3050ms;
+
+    img {
+      $s: 5rem;
+      width: $s;
+      height: $s;
+      margin-right: $spacer-small;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: $md-fs;
+
+      span {
+        color: $light-primary-clr;
+      }
+    }
+  }
+
+  &__copyright {
+    width: 30vw;
+    height: 15vw;
+    position: absolute;
+    bottom: -17.5vh;
+    right: -5vw;
+    background: white;
+    padding-bottom: $spacer-small * 0.75;
+    padding-top: $spacer-md;
+    padding-left: $spacer-md * 1.5;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fade-in 400ms forwards ease-out 200ms;
+
+    p {
+      font-size: $main-fs * 0.5;
+      color: grey;
+    }
+  }
+}

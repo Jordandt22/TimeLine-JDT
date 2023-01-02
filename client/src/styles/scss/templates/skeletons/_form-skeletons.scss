@@ -1,0 +1,49 @@
+// Form Skeleton
+.form-skeleton {
+  max-width: 40vw;
+  animation: fade-in 1500ms infinite alternate ease-out;
+
+  &__title {
+    width: 100%;
+    height: 5vh;
+    background: lightgrey;
+    margin-bottom: $spacer-md;
+    border-radius: $br * 0.25;
+  }
+
+  &__input,
+  &__textarea {
+    width: 100%;
+    height: 5vh;
+    background: rgba(lightgrey, 0.5);
+    border-radius: $br;
+    margin-bottom: $spacer;
+  }
+
+  &__textarea {
+    height: 35vh;
+    margin-bottom: $spacer-md;
+  }
+
+  &__status {
+    margin-bottom: $spacer-md;
+  }
+
+  &__button,
+  &__submit,
+  &__cancel {
+    width: 25%;
+    height: 5vh;
+    background: rgba(lightgrey, 0.5);
+    border-radius: $br;
+    margin-right: $spacer-small;
+  }
+
+  &__submit {
+    background: $light-primary-clr;
+  }
+
+  &__cancel {
+    background: rgba($red, 0.5);
+  }
+}

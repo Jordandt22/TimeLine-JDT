@@ -1,0 +1,48 @@
+// Create Page Styles
+.create-form {
+  width: 40vw;
+
+  &__submit,
+  &__cancel {
+    outline: none;
+    border: 1px solid $primary-clr;
+    border-radius: $br;
+    background: transparent;
+    padding: $spacer-small * 0.65 $spacer;
+    color: $primary-clr;
+    margin-right: $spacer;
+    margin-top: $spacer;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      cursor: pointer;
+      color: white;
+      background: $primary-clr;
+    }
+  }
+
+  &__cancel {
+    color: $red;
+    border-color: $red;
+
+    &:hover {
+      background: $red;
+    }
+  }
+}
+
+// Project Status
+.project-status {
+  label {
+    display: block;
+    margin-bottom: $spacer-small;
+    font-size: $main-fs * 0.55;
+    font-weight: 500;
+    font-family: $main-font;
+  }
+
+  .status-filters {
+    margin-bottom: $spacer;
+    margin-top: 0;
+  }
+}

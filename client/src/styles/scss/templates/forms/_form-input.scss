@@ -1,0 +1,86 @@
+// Form Input Styles
+.form-input {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: $spacer;
+
+  label {
+    display: block;
+    margin-bottom: $spacer-small;
+    font-size: $main-fs * 0.55;
+    font-weight: 500;
+    font-family: $main-font;
+
+    span {
+      font-weight: 400;
+      color: $border-clr;
+    }
+  }
+
+  input,
+  textarea {
+    outline: none;
+    border: 1px solid $border-clr;
+    border-radius: $br;
+    padding: $spacer-small * 0.65 $spacer-small * 1.25;
+    font-size: $main-fs * 0.5;
+    transition: all 200ms ease-out;
+
+    &::placeholder {
+      color: $border-clr;
+    }
+
+    &:focus {
+      border-color: $primary-clr !important;
+    }
+  }
+
+  textarea {
+    resize: none;
+    height: 35vh;
+    padding: $spacer-small $spacer-small * 1.75;
+  }
+
+  &__password-button {
+    outline: none;
+    border: none;
+    padding: 0;
+    background: transparent;
+    color: grey;
+    font-size: $main-fs * 0.5;
+    width: fit-content;
+    margin-top: $spacer-small * 0.65;
+    margin-left: $spacer-small * 1.25;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__forgot-password {
+    margin-left: 0;
+    margin-right: $spacer-small * 1.25;
+  }
+
+  &__disabled-input {
+    background: rgba($green, 0.25);
+    border-color: $green !important;
+  }
+
+  &__error-input {
+    border-color: $red !important;
+  }
+
+  &__error-message {
+    border-radius: $br;
+    background: rgba($red, 0.25);
+    padding: $spacer-small * 0.4 $spacer-small * 1.25;
+    font-size: $main-fs * 0.5;
+    font-weight: 500;
+    color: $red;
+    margin-top: $spacer-small * 0.75;
+    opacity: 0;
+    animation: fade-in 400ms forwards ease-out;
+    line-height: $spacer-small * 1.25;
+  }
+}

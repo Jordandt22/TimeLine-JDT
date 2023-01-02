@@ -1,0 +1,18 @@
+// Password Reset Form Styles
+.reset-form {
+  min-width: 30vw;
+  background: white;
+  border-radius: 5px;
+  padding: $spacer;
+  z-index: 2000;
+
+  &__title {
+    margin-bottom: $spacer;
+    font-size: $main-fs * 0.75;
+  }
+
+  &__submit {
+    @include primary-button;
+    width: 100%;
+  }
+}

@@ -1,0 +1,135 @@
+// Home Styles
+
+// Dashboard Lists
+.dashboard-lists {
+  width: 100%;
+  align-items: flex-start;
+}
+
+.dashboard-list {
+  width: 20vw;
+  margin-right: $spacer * 1.5;
+
+  header {
+    margin-bottom: $spacer;
+  }
+
+  &__none {
+    p {
+      color: grey;
+      line-height: $spacer-small * 1.5;
+    }
+
+    a {
+      display: block;
+      text-decoration: none;
+      margin-top: $spacer;
+      color: $dark-primary-clr;
+      background: transparent;
+      border: 1px solid $dark-primary-clr;
+      padding: $spacer-small * 0.75 $spacer;
+      text-align: center;
+      transition: all 200ms ease-out;
+
+      &:hover {
+        color: white;
+        background: $dark-primary-clr;
+      }
+    }
+  }
+
+  &__title {
+    font-size: $main-fs * 0.75;
+    font-weight: normal;
+    margin-bottom: $spacer-small * 0.5;
+  }
+
+  &__subTitle {
+    color: grey;
+    font-size: $main-fs * 0.5;
+  }
+
+  &__viewAll {
+    display: block;
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: $spacer-small 0;
+    width: 100%;
+    margin-bottom: $spacer;
+    text-align: center;
+    transition: all 200ms ease-out;
+
+    &:hover {
+      opacity: 0.75;
+    }
+  }
+
+  hr {
+    margin-bottom: $spacer;
+  }
+}
+
+.dashboard-item {
+  &__name {
+    font-size: $main-fs * 0.65;
+    margin-bottom: $spacer-small * 0.75;
+
+    &:hover {
+      cursor: pointer;
+      text-decoration: underline;
+    }
+  }
+
+  &__desc {
+    color: grey;
+    line-height: $spacer-small * 1.5;
+    height: 15vh;
+    margin-bottom: $spacer-small;
+  }
+
+  &__status {
+    text-transform: uppercase;
+    font-size: $main-fs * 0.5;
+  }
+
+  .onHold {
+    color: $red;
+  }
+
+  .developing {
+    color: $yellow;
+  }
+
+  .finished {
+    color: $green;
+  }
+
+  // Project
+  &__project {
+    .icon {
+      color: grey;
+      margin-right: 5px;
+    }
+
+    p {
+      color: grey;
+    }
+  }
+
+  // Divider
+  hr {
+    margin: $spacer * 1.25 0;
+    background: lightgrey;
+    opacity: 0.5;
+  }
+}
+
+// Dashboard Skeleton
+.dashboard-skeleton {
+  background: $secondary-bg;
+  width: 100%;
+  height: 30vh;
+  margin-bottom: $spacer;
+  animation: fade-in 1000ms alternate infinite ease-out 200ms;
+}
